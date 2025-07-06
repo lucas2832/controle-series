@@ -13,7 +13,12 @@ return new class extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('series', function (BluePrint $table){
+            $table->id();
+            $table->string('nome', 128);
+            $table->timestamps();
+
+        });
     }
 
     /**
